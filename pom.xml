@@ -12,8 +12,18 @@
   	<junit.version>4.12</junit.version>
   	<spring.version>4.3.4.RELEASE</spring.version>
   	<struts2.version>2.5.5</struts2.version>
-  	<hibernate.version>5.2.5.Final</hibernate.version>
+  	<hibernate.version>4.3.11.Final</hibernate.version>
   </properties>
+  
+<!--   <dependencyManagement>
+  	<dependencies>
+  		<dependency>  		
+	  		<groupId>org.springframework</groupId>
+		    <artifactId>spring-context</artifactId>
+		    <version>${spring.version}</version>
+  		</dependency>
+  	</dependencies>
+  </dependencyManagement> -->
   
   <dependencies>
     <dependency>
@@ -34,7 +44,14 @@
 	    <artifactId>javax.servlet-api</artifactId>
     	<version>3.1.0</version>
     	<!-- 只在编译和测试时运行 -->
-    	<!-- <scope>provided</scope> -->
+    	<scope>provided</scope>
+	</dependency>
+	
+	<!-- c3p0连接池jar -->
+	<dependency>
+	    <groupId>c3p0</groupId>
+	    <artifactId>c3p0</artifactId>
+	    <version>0.9.1.2</version>
 	</dependency>
 	
 	<dependency>
@@ -50,6 +67,12 @@
 	    <version>${struts2.version}</version>
 	</dependency>
 	
+	<dependency>
+	    <groupId>org.apache.struts</groupId>
+	    <artifactId>struts2-spring-plugin</artifactId>
+	    <version>${struts2.version}</version>
+	</dependency>
+	
 	<!-- 添加hibernate依赖包 -->
 	<dependency>
 	    <groupId>org.hibernate</groupId>
@@ -59,6 +82,18 @@
 	
 	<!-- 添加spring依赖包 -->
 	<!-- spring框架依赖 IOC-->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-core</artifactId>
+	    <version>${spring.version}</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-beans</artifactId>
+	    <version>${spring.version}</version>
+	</dependency>
+	
 	<dependency>
 	    <groupId>org.springframework</groupId>
 	    <artifactId>spring-context</artifactId>
