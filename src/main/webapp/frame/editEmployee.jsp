@@ -31,7 +31,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</tr>
 		<tr>
 		  <td>性别：</td>
-		  <td><s:textfield name="sex" list="{'男','女'}" value="%{model.sex}"/></td>
+		  <td><s:textfield name="gender" list="{'男','女'}" value="%{model.gender}"/></td>
 		</tr>
 		<tr>
 		<td align="center">用户名：</td>

@@ -1,5 +1,7 @@
 package com.gary.service;
 
+import java.util.List;
+
 import com.gary.entity.Department;
 import com.gary.entity.PageBean;
 
@@ -19,5 +21,7 @@ public interface DepartmentService {
 	void update(Department department);
 
 	void delete(Department department);
+
+	List<Department> findAll();
 
 }

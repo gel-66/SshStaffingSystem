@@ -49,6 +49,7 @@
 	<!-- 配置action的类 -->
 	<bean id="employeeAction" class="com.gary.action.EmployeeAction" scope="prototype">
 		<property name="employeeService" ref="employeeService"></property>
+		<property name="departmentService" ref="departmentService"></property>
 	</bean>
 	<bean id="departmentAction" class="com.gary.action.DepartmentAction" scope="prototype">
 		<property name="departmentService" ref="departmentService"></property>

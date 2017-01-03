@@ -23,4 +23,6 @@ public interface DepartmentDao {
 
 	void delete(Department department);
 
+	List<Department> findAll();
+
 }

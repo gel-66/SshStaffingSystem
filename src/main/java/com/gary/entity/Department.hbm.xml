@@ -11,8 +11,8 @@
 			<property name="dname" column="dname" length="20"/>    		
 			<property name="ddesc" column="ddesc" length="100"/> 
 			
-			<!-- 关联关系映射 -->
-			<set name="employees">
+			<!-- 关联关系映射  cascade 级联删除 inverse 放弃外键维护权-->
+			<set name="employees" cascade="delete" inverse="true">
 				<key column="dno"/>
 				<one-to-many class="com.gary.entity.Employee"/>
 			</set>

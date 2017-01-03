@@ -27,7 +27,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<td align="center">姓名：</td>
 		<td><s:textfield name="ename"/></td>
 		<td align="center">性别：</td>
-		<td><s:radio name="sex" list="{'男','女'}"/></td>
+		<td><s:radio name="gender" list="{'男','女'}"/></td>
 	</tr>
 	<tr>
 		<td align="center">用户名：</td>

@@ -48,7 +48,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<tr>
 		<td align="center"><s:property value="#e.eno"/></td>
 		<td align="center"><s:property value="#e.ename"/></td>
-		<td align="center"><s:property value="#e.sex"/></td>
+		<td align="center"><s:property value="#e.gender"/></td>
 		<td align="center"><s:date name="#e.birthday" format="yyyy-MM-dd"/></td>
 		<td align="center"><s:date name="#e.joinDate" format="yyyy-MM-dd"/></td>
 		<td align="center"><s:property value="#e.department.dname"/></td>

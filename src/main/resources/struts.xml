@@ -7,7 +7,13 @@
 		<action name="employee_*" class="employeeAction" method="{1}">
 			<result name="input">/index.jsp</result>
 			<result name="success" type="redirect">/frame.jsp</result>
-			<allowed-methods>login</allowed-methods>
+			<result name="findAll">/frame/listEmployee.jsp</result>
+			<result name="saveUI">/frame/addEmployee.jsp</result>
+			<result name="save" type="redirectAction">employee_findAll.action</result>
+			<result name="editSuccess">/frame/editEmployee.jsp</result>
+			<result name="updateSuccess" type="redirectAction">employee_findAll.action</result>
+			<result name="deleteSuccess" type="redirectAction">employee_findAll.action</result>
+			<allowed-methods>login,saveUI,findAll,save,edit,update,delete</allowed-methods>
 		</action>
 		<action name="department_*" class="departmentAction" method="{1}">
 			<result name="findAll">/frame/listDep.jsp</result>
